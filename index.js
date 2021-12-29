@@ -21,3 +21,9 @@ const main = async (startID, lastID) => {
 }
 
 main(1, 2);
+
+// -> script art pinata upload
+// -> make the image url update in the respective json file
+// -> script  metadata pinata upload
+// -> batch the token IDs and their metadata link into different lists.
+// -> make it ready for deployment
