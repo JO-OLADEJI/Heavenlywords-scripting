@@ -1,0 +1,16 @@
+{
+  "name": "hws-scripting",
+  "version": "1.0.0",
+  "description": "script to automate heavenlywords nft metadata",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "node index.js"
+  },
+  "author": "Joshua Oladeji",
+  "license": "ISC",
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.9",
+    "dotenv": "^10.0.0"
+  }
+}

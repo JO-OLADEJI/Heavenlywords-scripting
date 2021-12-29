@@ -1,0 +1,1 @@
+# Automation of Heavenlywords NFT metadata
