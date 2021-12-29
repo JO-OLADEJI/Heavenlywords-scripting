@@ -1,7 +1,23 @@
 const { getImageDescById } = require('./scripts/getWords.js');
+const { createJSON } = require('./scripts/createMetaJson.js');
 
-const main = async () => {
-  await getImageDescById(1);
+/**
+ * 
+ * @param {Number} startID - the tokenID to start with
+ * @param {Number} lastID - the last tokenID
+ */
+const main = async (startID, lastID) => {
+  if (lastID <= startID) {
+    console.log('Check Params !');
+    return;
+  }
+
+  for (let i = startID; i <= lastID; i++) {
+    await getImageDescById(i)
+    .then((name) => {
+      createJSON(i, name, './metadata');
+    });
+  }
 }
 
-main();
+main(1, 2);
